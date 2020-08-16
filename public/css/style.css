@@ -1,0 +1,270 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body,
+button,
+textarea,
+input {
+  font: 400 1.6rem "IBM Plex Mono", monospace;
+  line-height: 1.7;
+  color: #282829;
+}
+
+input[type="text"] {
+  padding: 1rem 1.5rem;
+  transition: 0.3s;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.main {
+  display: flex;
+}
+
+label {
+  display: block;
+  transition: 0.3s;
+}
+
+.left-side,
+.right-side {
+  padding: 3rem;
+  width: 50%;
+  min-height: 100vh;
+}
+
+.left-side {
+  background-color: #e2dfe0;
+  transition: 0.3s;
+}
+
+.right-side {
+  background-color: #eee;
+  display: flex;
+  justify-content: space-between;
+}
+
+.color-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2.5rem;
+}
+
+.color-container label {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.color-container div:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+#color,
+#color-2 {
+  margin-top: 0.5rem;
+  height: 3rem;
+  width: 3rem;
+}
+
+.color-test {
+  display: flex;
+  flex-direction: column;
+}
+
+.test-area,
+.heading-btn {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.test-area,
+.text {
+  transition: 0.3s;
+}
+
+.text {
+  margin-bottom: 0.5rem;
+}
+
+input[type="text"] {
+  border: 2px solid transparent;
+}
+
+input[type="text"]::-webkit-input-placeholder {
+  color: #282829;
+}
+
+input[name="inside"] {
+  margin: 1rem 0;
+}
+
+input[name="border"] {
+  margin-bottom: 1rem;
+}
+
+.background {
+  height: 15rem;
+  width: 100%;
+  background-color: #282829;
+  transition: 0.3s;
+}
+
+.copy-color {
+  margin: 2.5rem auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.copy-color p {
+  text-align: center;
+  margin-bottom: 1rem;
+  animation: pulsate 1s infinite linear;
+  transition: 0.3s;
+}
+
+.code-color {
+  margin-bottom: 1rem;
+}
+
+.code-color,
+.code-color-2 {
+  padding: 1rem 1.5rem;
+  transition: 0.3s;
+  border: 2px solid #000;
+}
+
+.code-color code,
+.code-color-2 code {
+  font-size: 2rem;
+}
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#config,
+.results {
+  flex: 1;
+  padding: 3rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+#config {
+  box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 1);
+  margin-right: 1.5rem;
+  background-color: #282829;
+}
+
+.results {
+  justify-content: center;
+  align-items: center;
+}
+
+.input-wrapper:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#config label {
+  color: white;
+}
+
+#config .heading-btn {
+  color: white;
+}
+
+#config input {
+  display: inline-block;
+  height: 3rem;
+  width: 100%;
+  margin: initial;
+  border-radius: 2px;
+}
+
+#config small {
+  font-size: 1rem;
+}
+
+.results pre {
+  margin-top: 2rem;
+}
+
+.css {
+  font-size: 1.3rem;
+  font-family: "IBM Plex Mono", monospace;
+  color: #333;
+}
+
+.css span {
+  display: block;
+  margin-bottom: 0.8rem;
+}
+
+@media only screen and (max-width: 75em) {
+  .main {
+    flex-direction: column;
+  }
+
+  .left-side,
+  .right-side {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 43.75em) {
+  html {
+    font-size: 43.75%;
+  }
+}
+
+@media only screen and (max-width: 31.25em) {
+  .right-side {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 106.25em) {
+  html {
+    font-size: 87.5%;
+  }
+
+  #fontFamily {
+    height: 4rem;
+    width: 11rem;
+    font-size: 2rem;
+  }
+}

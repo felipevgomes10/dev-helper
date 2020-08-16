@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="img/palette.png" type="image/png" />
+    <title>Dev helper | Uma ajudinha enquanto você cria seus projetos</title>
+  </head>
+  <body>
+    <main class="main">
+      <section class="left-side">
+        <div class="color-container">
+          <div>
+            <label for="color">Mude a cor aqui</label>
+            <input type="color" name="color" id="color" value="#282829" />
+          </div>
+
+          <div>
+            <label for="color">Mude o background para melhor contraste</label>
+            <input type="color" name="color-2" id="color-2" value="#e2dfe0" />
+          </div>
+        </div>
+
+        <div class="color-test">
+          <h1 class="test-area">Área de teste</h1>
+          <h1 class="text">Texto Teste</h1>
+          <h2 class="text">Texto Teste</h2>
+          <h3 class="text">Texto Teste</h3>
+          <h4 class="text">Texto Teste</h4>
+          <h5 class="text">Texto Teste</h5>
+          <h6 class="text">Texto Teste</h6>
+          <input
+            type="text"
+            name="inside"
+            id="inside"
+            placeholder="Teste de background..."
+          />
+          <input
+            type="text"
+            name="border"
+            id="border"
+            placeholder="Teste de borda..."
+          />
+          <div class="background"></div>
+        </div>
+
+        <div class="copy-color">
+          <p>Copie a sua cor aqui:</p>
+          <pre class="code-color"><code>#282829</code></pre>
+          <pre class="code-color-2"><code>#e2dfe0</code></pre>
+        </div>
+      </section>
+
+      <section class="right-side">
+        <form name="config" id="config">
+          <h1 class="heading-btn">Crie um botão aqui</h1>
+          <div class="input-wrapper">
+            <label for="text">texto</label>
+            <input type="text" name="text" id="text" />
+          </div>
+
+          <div class="input-wrapper">
+            <label for="color">color</label>
+            <input type="color" name="color" id="color" value="#282829" />
+          </div>
+
+          <div class="input-wrapper">
+            <label for="backgroundColor">background-color</label>
+            <input
+              type="color"
+              name="backgroundColor"
+              id="backgroundColor"
+              value="#282829"
+            />
+          </div>
+
+          <div class="input-wrapper">
+            <label for="border-2">border</label>
+            <input
+              type="text"
+              name="border"
+              id="border-2"
+              placeholder="Ex: 2px solid white"
+            />
+          </div>
+
+          <div class="input-wrapper">
+            <label for="boxShadow">box-shadow</label>
+            <input
+              type="text"
+              name="boxShadow"
+              id="boxShadow"
+              placeholder="Ex: 1px 2px 3px 0 white"
+            />
+          </div>
+
+          <div class="input-wrapper">
+            <label for="borderRadius">border-radius</label>
+            <input
+              type="range"
+              name="borderRadius"
+              id="borderRadius"
+              min="0"
+              max="50"
+              value="0"
+            />
+          </div>
+
+          <div class="input-wrapper">
+            <label for="height">height</label>
+            <input
+              type="range"
+              name="height"
+              id="height"
+              min="0"
+              max="50"
+              value="0"
+            />
+          </div>
+
+          <div class="input-wrapper">
+            <label for="width">width</label>
+            <input
+              type="range"
+              name="width"
+              id="width"
+              min="0"
+              max="50"
+              value="0"
+            />
+          </div>
+
+          <div class="input-wrapper">
+            <label for="fontSize">font-size <small>(em rem)</small></label>
+            <input type="number" name="fontSize" id="fontSize" value="1.6" />
+          </div>
+
+          <div class="input-wrapper">
+            <label for="padding">padding <small>(em rem)</small></label>
+            <input type="number" name="padding" id="padding" />
+          </div>
+
+          <div class="input-wrapper">
+            <label for="fontFamily">font-family</label>
+            <select name="fontFamily" id="fontFamily">
+              <option value="Arial">Arial</option>
+              <option value="Georgia">Georgia</option>
+              <option value="monospace">Monospace</option>
+            </select>
+          </div>
+        </form>
+        <section class="results">
+          <button class="btn">Teste</button>
+          <pre><code class="css">Codigo aqui!!</code></pre>
+        </section>
+      </section>
+    </main>
+    <script type="module" src="script/script.js"></script>
+  </body>
+</html>
