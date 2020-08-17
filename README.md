@@ -28,7 +28,7 @@ Além das cores, **_também é possivel criar um botão do zero e estilizá-lo_*
 # Local Storage
 A sessão de **_criação do botão foi configurada para guardar as prenferências do botão mais recente_**, sendo assim, você **_não perderá o seu botão caso o seu navegador feche, ou a página seja recarregada_**.
 
-<img src="public/img/local-storage.PNG">
+<img src="public/img/local-storage.gif">
 
 # Inicializando o projeto
 O projeto Dev-helper foi criado com a ajuda de tecnologias como **_HTML5, CSS3 e JavaScript_**. Além disso **_foi utilizado o NodeJS_**, sendo assim você precisará instalá-lo no seu computador. Alguns pacotes npm também foram utilizados durante o projeto a fim de automatizar o processo, sendo eles:
@@ -51,3 +51,10 @@ npm run server
 ```
 
 Obs: No começo foi utilizado o live-server, mas como os arquivos estáticos foram movidos para a pasta public, o live-server tornou-se inutilizável, assim, sempre execute o servidor do express com o comando acima.
+
+# Responsividade
+Dev-helper faz uso do CSS flex-box, e é totalmente responsivo para todos os tamanhos de tela.
+
+<img src="public/img/responsive.PNG"> <img src="public/img/responsive-2.PNG"> <img src="public/img/responsive-3.PNG">
+
+
