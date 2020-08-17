@@ -1,6 +1,10 @@
 # Dev-helper
 Dev-helper é um projeto criado para ajudar pessoas à escolher cores e criar botões estilizados para os seus projetos.
 
+# Para ver o projeto em funcionamento vá para:
+
+https://felipevgomes10.github.io/dev-helper/
+
 # Funcionalidades
 Com o dev-helper você pode escolher entre diferentes cores para os seus projetos e ter um **_feedback visual em tempo real_**. Você será **_capaz de testar as cores em bordas, backgrounds, inputs e letras_**.
 
@@ -53,7 +57,7 @@ npm run server
 Obs: No começo foi utilizado o live-server, mas como os arquivos estáticos foram movidos para a pasta public, o live-server tornou-se inutilizável, assim, sempre execute o servidor do express com o comando acima.
 
 # Responsividade
-Dev-helper faz uso do CSS flex-box, e é totalmente responsivo para todos os tamanhos de tela.
+**_Dev-helper faz uso do CSS flex-box_**, e é **_totalmente responsivo_** para todos os tamanhos de tela.
 
 <img src="public/img/responsive.PNG"> <img src="public/img/responsive-2.PNG"> <img src="public/img/responsive-3.PNG">
 
